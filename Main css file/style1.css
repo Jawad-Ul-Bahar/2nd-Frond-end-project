@@ -1,0 +1,197 @@
+
+body{
+     margin: 0px;
+     padding: 0px;
+      background-color: aliceblue;
+}
+header{
+      position: sticky;
+      top: 5px;
+      z-index: +1;
+      
+}
+#home{
+    text-align: center;
+}
+
+#navbar{
+      width: 100%;
+      margin-top: -12px;
+      box-shadow: 0 0 04px black;
+}
+.home1{
+      margin-left: 35px;
+}
+/* Event  page */
+.boldfont{
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+}
+.btngalley{
+      border-radius: 50px;
+      font-size: s-+
+      nu7mall;
+      font-family: sans-serif;
+}
+
+
+
+
+/* games cards */
+.smallheading{
+       text-align: center;
+       font-size: 40px;
+       font-family: serif;
+       
+} 
+.gamecards{
+      text-align: center;
+      font-size : 20px;
+}  
+
+
+/* socail icons */
+.socailicons{
+    display: inline;
+    margin-right: 5%;
+    margin-left: 0%;
+    
+}
+.social-links{
+    margin-bottom: 20px;
+
+}
+
+.social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
+}
+
+.social-links a:hover{
+transform: translateY(-3px);
+
+}
+
+
+
+
+/* home */
+
+
+.nextolympicsgames{
+      height: 200px;
+      width: 200px;
+}
+.divnextolympicsgames{
+      margin-left: 15%;
+      margin-right: 15%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+}
+
+
+/* event page */
+.livestream{
+      margin-top: -120px;
+}
+
+
+#footerimg{
+
+      margin-right: 66%;
+}
+
+ /* summer olympics page card styles.css */
+
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.3s; /* add transition effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* scale up on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add box shadow on hover */
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: opacity 0.3s; /* add transition effect */
+}
+
+.card img:hover {
+    opacity: 0.8; /* reduce opacity on hover */
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 10px;
+    }
+    .card img {
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        margin-bottom: 5px;
+    }
+    .card img {
+        height: 80px;
+    }
+}
+
+/* news card  & silder */
+@media only screen and (max-width: 960px) {
+    #newscard1 {
+      display: none;
+
+    }
+    .silder, img{
+        height: 400px;
+    }
+  }
+
+
+
+  /*  */
+
+/* show text slow */
+.slowshow1 {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.slowshow1.show {
+    opacity: 1;
+}
+
+
+

@@ -1,0 +1,413 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+  }
+  /* navbar */
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      /* background-color: #333; */
+      color: #fff;
+  }
+  
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  nav ul li {
+      display: inline;
+      margin-right: 20px;
+  }
+  
+  nav ul li a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  main {
+      padding: 20px;
+  }
+  
+  section {
+      margin-bottom: 30px;
+  }
+  
+  h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+  
+  h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  li {
+      margin-bottom: 10px;
+  }
+  
+  table {
+      border-collapse: collapse;
+      width: 100%;
+  }
+  
+  th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+  }
+  
+  th {
+      background-color: #333;
+      color: #fff;
+  }
+  
+  footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+  }
+  
+  .logoimg1{
+        width: 150px;
+        height: 70px;
+  }
+
+    /* trasparent nav bar */
+.navbar.bg-body-tertiary {
+  background-color: transparent !important;
+  border-bottom: none;
+}
+
+.navbar.bg-body-tertiary .navbar-brand {
+  color: #fff; /* change the color of the logo text to white */
+}
+
+.navbar.bg-body-tertiary .nav-link {
+  color: #fff; /* change the color of the nav links to white */
+}
+
+.navbar.bg-body-tertiary .nav-link:hover {
+  color: #ccc; /* change the hover color of the nav links to a light gray */
+}
+
+.navbar.bg-body-tertiary .dropdown-menu {
+  background-color: #333; /* change the background color of the dropdown menu to a dark gray */
+  border: none;
+}
+
+.navbar.bg-body-tertiary .dropdown-item {
+  color: #fff; 
+}
+
+.navbar.bg-body-tertiary .dropdown-item:hover {
+  background-color: #444; /* change the hover background color of the dropdown items to a dark gray */
+}
+.navbar.bg-body-tertiary {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+  background-color: transparent !important;
+  border-bottom: none;
+}
+
+
+  /*  GALERY ITEMS */
+
+ .gallery {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+    margin: 40px auto;
+  } 
+  
+  .gallery-item {
+    width: 300px;
+    margin: 10px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+
+  /* Video responsive */
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
+    /* Video responsive End*/
+  
+
+ /* News Cards  */
+  
+body {
+  font-family: "Figtree", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  min-height: 100vh;
+}
+
+.articles {
+  display: grid;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+
+ article {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  background: #fff;
+  /* transform-origin: center;
+  transition: all 0.4s ease-in-out; */
+  overflow: hidden;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+/*  */
+
+
+article h2 {
+  margin: 0 0 18px 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #28666e;
+}
+
+article a:focus {
+  outline: 1px dotted #28666e;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+
+
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+/* news card end  */
+
+
+
+
+
+/* footer */
+
+footer {
+background-color: #000000;
+padding: 20px 0;
+border-top: 1px solid #ddd;
+color: white;
+
+
+}
+
+footer .containerfooter {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+footer .row {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+footer .col-md-3 {
+width: 25%;
+margin-bottom: 20px;
+}
+
+footer h5 {
+font-weight: bold;
+margin-top: 0;
+}
+
+footer ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+footer li {
+margin-bottom: 10px;
+}
+
+footer a {
+text-decoration: none;
+color: #337ab7;
+}
+
+footer a:hover {
+color: #23527c;
+}
+
+
+footer p {
+margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+  .article-body p {
+    display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .article-body {
+    padding-left: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+/* NEWS CARD END  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  @media only screen and (max-width: 768px) {
+   .video-container {
+      padding-bottom: 75%; /* 4:3 aspect ratio for smaller screens */
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+   .video-container {
+      padding-bottom: 100%; /* 1:1 aspect ratio for very small screens */
+    }
+  }
